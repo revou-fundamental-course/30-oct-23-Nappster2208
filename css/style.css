@@ -5,6 +5,8 @@
 p {
     text-align: justify;
     line-height: 1.5;
+    font-size: 15px;
+    margin-bottom: 30px;
 }
 
 .form_section{
@@ -26,11 +28,63 @@ label{
 }
 
 input {
-    border: none;
+    border-color: #B6FFFA;
     outline: none;
     margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+input:focus{
+    border-color: #687EFF;
+}
+
+button{
+    border: none;
+    padding: 10px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: aquamarine;
+}
+
+button:active{
+    background-color: #00C4FF;
+}
+
+.btn{
+    background-color: #00C4FF;
+    color: aliceblue;
+}
+
+.btn:hover{
+    background-color: aqua;
+}
+
+.btn:active{
+    background-color: #0791bb;
 }
 
 h3{
     font-weight: normal;
+}
+
+#keunggulan{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-radius: 8px;
+    font-size: small;
+    text-align: center;
+    padding: 5px;
+    font-style: italic;
 }
