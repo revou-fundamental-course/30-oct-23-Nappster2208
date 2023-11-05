@@ -30,14 +30,23 @@
                 <input type="radio" id="wanita" name="jenis_kelamin" value="Wanita"><label for="wanita">Wanita</label>
             </div>
 
-            <label for="weight">Berat Badan (kg)</label>
-            <input type="number" id="weight" placeholder="0 kg">
+            <div class="al-input">
+                <label for="weight">Berat Badan (kg)</label>
+                <input type="number" id="weight" placeholder="0 kg">
+                <i class="al-alert" id="alertWeight"></i>
+            </div>
 
-            <label for="usia">Usia (Tahun)</label>
-            <input type="number" id="usia" placeholder="0">
+            <div class="al-input">
+                <label for="age">Usia (Tahun)</label>
+                <input type="number" id="age" placeholder="0">
+                <i class="al-alert" id="alertAge"></i>
+            </div>
 
-            <label for="height">Tinggi Badan (cm)</label>
-            <input type="number" id="height" placeholder="0 cm">
+            <div class="al-input">
+                <label for="height">Tinggi Badan (cm)</label>
+                <input type="number" id="height" placeholder="0 cm">
+                <i class="al-alert" id="alertHeight"></i>
+            </div>
 
             <div class="btn_box">
                 <button class="btn" id="btn_hitung">Hitung BMI</button>
@@ -64,11 +73,14 @@
     <!-- Result Content -->
     <div id="result_container" style="display: none;">
         <h2>Hasil</h2>
-        <label id="label_result_text">Test1</label>
-        <label id="label_result_number">24</label>
-        <label id="label_result_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, rerum laudantium voluptates non, excepturi nam ullam aperiam numquam maxime expedita suscipit maiores sapiente quas natus quisquam totam deserunt commodi modi?</label>
-        <button class="btn">Konsultasi Ahli Gizi Via Aplikasi</button>
-        <button class="btn">Registrasi Online Ahli Gizi</button>
+        <label class="al-center" id="label_result_text">Test1</label>
+        <label class="al-center" id="label_result_number">24</label>
+        <label class="al-center" id="label_result_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, rerum laudantium voluptates non, excepturi nam ullam aperiam numquam maxime expedita suscipit maiores sapiente quas natus quisquam totam deserunt commodi modi?</label>
+
+        <div>
+            <button class="btn">Konsultasi Ahli Gizi Via Aplikasi</button>
+            <button class="btn">Registrasi Online Ahli Gizi</button>
+        </div>
         <div id="result_desc_text">
             
         </div>
