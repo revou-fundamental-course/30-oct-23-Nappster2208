@@ -2,10 +2,10 @@
 // On click Hitung BMI
 document.getElementById("btn_hitung").addEventListener("click", function () {
 
-    const jk = document.getElementById("jenis_kelamin");
-    const weight = document.getElementById("weight");
-    const height = document.getElementById("height");
-    const age = document.getElementById("age");
+    var jk = document.getElementById("jenis_kelamin");
+    var weight = document.getElementById("weight");
+    var height = document.getElementById("height");
+    var age = document.getElementById("age");
 
     let alertWeight = document.getElementById("alertWeight");
     let alertAge = document.getElementById("alertAge");
@@ -47,29 +47,22 @@ function validate(id, alertId) {
 
 // Calculate BMI function
 function calculate(weight, age, height){
-
+    
+    height = height / 100; // Convert height to meter
+    
     var BMI = weight / (height * height);
 
-    switch (BMI) {
-        case BMI < 18.5:
-            alert("Berat Badan Kurang!");
-            break;
-
-        case (BMI >= 18.5) && (BMI <= 24.9) :
-            alert("Berat Badan Kurang!");
-            break;
-
-        case (BMI >= 25.0) && (BMI <= 29.9) :
-            alert("Kelebihan Berat Badan");
-            break;
-
-        case BMI >= 30.0 :
-            alert("Kegemukan (Obesitas)");
-            break;
-    
-        default:
-            break;
+    // Checking Weight Condition
+    if (BMI < 18.5) {
+        alert("Kekurangan berat badan");
+    } else if ((BMI >= 18.5) && (BMI <=24.9)){
+        alert("Berat badan normal");
+    } else if ((BMI >=25.0) && (BMI <= 29.9)){
+        alert("Kelebihan berat badan");
+    } else {
+        alert("Obesitas mas bro !!!");
     }
+
     // Show the result container and hide the form
     document.getElementById("result_container").style.display = "flex";
     document.querySelector(".main-section").style.display = "none";
