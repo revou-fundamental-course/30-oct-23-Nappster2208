@@ -123,3 +123,13 @@ h3{
     border: 3px solid rgb(4, 95, 138);
     border-radius: 50%;
 }
+
+#label_result_desc{
+    margin-top: 10px;
+}
+
+#iklan_container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
